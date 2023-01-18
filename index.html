@@ -1,7 +1,20 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<title>Tino stinkt></title>
+	</head>
 	<body>
 		<h1>Tino stinkt</h1>
 		<p></p>
+		<button id="vbucks">Hover over me!</button>
+
+		<script>
+		  var button = document.getElementById("vbucks");
+		  button.onmouseover = function() {
+			button.style.position = "absolute";
+			button.style.left = Math.random() * (window.innerWidth - button.clientWidth) + "px";
+			button.style.top = Math.random() * (window.innerHeight - button.clientHeight) + "px";
+		  }
+		</script>
 	</body>
 </html>
